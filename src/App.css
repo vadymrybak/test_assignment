@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+div#root {
+  height: 100%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.App {
+  background-color: #0c0c0c;
+  height: 100%;
+  padding: 20px;
+  width: 100%;
+}
+
+.appHeader {
+  color: white;
+}
+
+
+div.content {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  padding: 0 4px;
+}
+
+
+@media (max-width: 1400px) {
+  .myCard {
+    min-width: 400px;
+  }
+}
+
+@media (max-width: 400px) {
+  .myCard {
+    min-width: 200px;
+  }
+}
+
+.myCard {
+  flex: 1 1;
+  color: white;
+  height: 100px;
+  border-left: 1px solid #CCC;
+  background-color: #2b2b2b;
+  margin: 10px;
+  padding: 10px;
+  border-left-width: 3px;
+  border-left-style: solid;
+  border-radius: 2px;
+}
+
+.myCard.yellow {
+  border-left-color: #f1af4b;
+}
+
+.myCard.red {
+  border-left-color: #f14b4b;
+}
+
+.myCard.green {
+  border-left-color: #73a011;
+}
+
+.myCard .top {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.myCard .content {
+  margin-top: 10px;
+  color: #CCC;
+  font-size: 0.8em;
+}
